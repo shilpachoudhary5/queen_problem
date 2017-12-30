@@ -3,7 +3,7 @@
 #define N 8
 
 
-bool checkvalidity(int r , int c, int column[])
+bool checkavavailability(int r , int c, int column[])
 { 
   int r1,c1;
   for (int j=0;j<r;j++)
@@ -29,7 +29,7 @@ bool queen(int column[], int n, int r)
 
   for (int c = 0; c<N; c++)
   {
-     if(checkvalidity(r,c,column))
+     if(checkavavailability(r,c,column))
       {
          column[r]=c;
          if(queen(column,n,r+1))
